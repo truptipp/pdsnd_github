@@ -1,6 +1,6 @@
 import time
 import pandas as pd
-import numpy as np
+
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -330,14 +330,6 @@ def get_dow_title(downum):
     dowtitle = weekday[downum]
 
     return [dowtitle]
-
-    # get weekday number if weekday name is given
-def get_dow_num(dowtitle):
-
-    weekday = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
-    downum = weekday.index(dowtitle) + 1
-
-    return [downum]
 
 
 def main():
